@@ -7,6 +7,7 @@ fetch(`${baseUrl}/results`)
     }
     return response.json(); 
 })
+
 .then(data => {
     console.log(data);
 })
@@ -23,14 +24,34 @@ function checkOption(chosenOption) {
         console.log(`${chosenOption} is not correct.`)
     }
     else{
-        console.log(`Please answer this question before proceeding to the next`)
+        alert(`Please answer this question before proceeding to the next`)
     }
 }
 
-const averageScore = questionsAnsweredCorrectly;
+function confirmChoice() {
+    var selectElement = document.getElementById('options');
+    var selectedValue = selectElement.value;
+    var errorMessage = document.getElementById('Error Message');
 
-function averageScore() {
-    if(questionsAnsweredCorrectly = totalScore){
-        return(`Your total score is ${totalScore}`)
+    if (selectedValue === "") {
+      errorMessage.style.display = 'block';
+      return false;
+    } else {
+      errorMessage.style.display = 'none';
+      return true;
+    }
+}
+
+function calculate(totalScore) {
+    if(totalScore = 100){
+        return "Congratulations! You aced the trivia!"
+    }
+    else{
+        if(totalScore < 100 || totalScore >= 50){
+            return "Not bad."
+        }
+        else{
+            return "Looks like your gaming knowledge is not as much."
+        }
     }
 }
