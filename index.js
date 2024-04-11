@@ -1,11 +1,11 @@
 const baseUrl = 'http://localhost:5500'
 fetch(`${baseUrl}/results`)
-.then(function (response){
-    return response.json;
-})
-.then(function (data) {
-    console.log(data);
-})
+.then(response => response.json())
+
+function generateTrivia() {
+    Document.getElementById()
+    generateTrivia()
+}
 
 function checkAnswer(inputAnswer) {
     if(inputAnswer = incorrectAnswer){
