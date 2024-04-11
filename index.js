@@ -1,5 +1,4 @@
-const baseUrl = 'http://localhost:3000'
-
+const baseUrl = 'http://localhost:5500'
 fetch(`${baseUrl}/results`)
 .then(response => {
     if (!response.ok) {
@@ -17,41 +16,22 @@ function promptUser() {
 }
 
 function checkOption(chosenOption) {
-    if(chosenOption = option1){
-        console.log(`${chosenOption} is correct!`)
+    if(chosenOption = wrongOption){
+        console.log(`${chosenOption} is correct!`);
     }
-    else if(chosenOption = option2){
-        console.log(`${chosenOption} is not correct.`)
+    else if(chosenOption = wrongOption){
+        console.log(`${chosenOption} is not correct.`);
     }
     else{
-        alert(`Please answer this question before proceeding to the next`)
-    }
-}
-
-function confirmChoice() {
-    var selectElement = document.getElementById('options');
-    var selectedValue = selectElement.value;
-    var errorMessage = document.getElementById('Error Message');
-
-    if (selectedValue === "") {
-      errorMessage.style.display = 'block';
-      return false;
-    } else {
-      errorMessage.style.display = 'none';
-      return true;
+        alert(`Please choose an option before proceeding to the next question`);
     }
 }
 
 function calculate(totalScore) {
     if(totalScore = 100){
-        return "Congratulations! You aced the trivia!"
+        return "Congratulations! You aced the trivia!";
     }
-    else{
-        if(totalScore < 100 || totalScore >= 50){
-            return "Not bad."
-        }
-        else{
-            return "Looks like your gaming knowledge is not as much."
-        }
+    else if(totalScore < 100 || totalScore >= 50){
+        return "Not bad";
     }
 }
