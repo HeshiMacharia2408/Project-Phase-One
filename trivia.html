@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h1>Gaming Trivia</h1>
-    <p>Have some fun answering these trivia quiz based on the modern day video games!</p>
+    <p>Have some fun answering these trivia quiz questions based on the modern day video games!</p>
 </head>
 <body>
     <p></p>
@@ -13,8 +14,7 @@
         <input type="radio" id="option2" name="answer" value="">
         <label for="option2" id="label2"></label>False<br>
         <button type="button" onclick="checkAnswer()">Submit</button>
-        <div id="Please choose an option before going to the next question" style="color: red;"></div>
-        <select name="option" id="option field"></select>
+        <div id="Error Message" style="color: red;">Please choose an option before continuing to the next question</div>   
     </form>
     <script src="index.js"></script>
     <script src="http://localhost:3000"></script>
