@@ -7,16 +7,14 @@
     <p>Have some fun answering these trivia quiz questions based on the modern day video games!</p>
 </head>
 <body>
-    <p></p>
-    <form id="optionsForm">
-        <div id="Error Message" style="color: cyan">Please choose an option before continuing to the next question</div>   
-        <input type="radio" id="option1" name="answer" value="" >
-        <label for="option1" id="label1"></label>True<br>
-        <input type="radio" id="option2" name="answer" value="">
-        <label for="option2" id="label2"></label>False<br>
-        <button type="button" onclick="checkOption()">Submit</button>
-    </form>
+    <h1>Gaming Trivia</h1>
+    <div id="question"></div>
+    <button onclick="answer('true')">True</button>
+    <button onclick="answer('false')">False</button>
+    <div id="Error Message">Please choose an option to continue</div>
+
     <script src="index.js"></script>
     <script src="http://localhost:5500"></script>
+    <script src="style.css"></script>
 <body>
 </html>
