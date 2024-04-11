@@ -1,6 +1,10 @@
 const baseUrl = 'http://localhost:5500'
 fetch(`${baseUrl}/results`)
 .then(response => response.json())
+.then(dara => {
+    const question = data.results[O];
+    displayQuestion(question)
+})
 
 function generateTrivia() {
     Document.getElementById()
