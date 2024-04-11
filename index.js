@@ -29,8 +29,8 @@ function checkOption(chosenOption) {
 
 const averageScore = questionsAnsweredCorrectly;
 
-function questionsAnsweredCorrectly() {
-    if(questionsAnsweredCorrectly ){
-        return(`Your total score is ${averageScore}`)
+function averageScore() {
+    if(questionsAnsweredCorrectly = totalScore){
+        return(`Your total score is ${totalScore}`)
     }
 }
