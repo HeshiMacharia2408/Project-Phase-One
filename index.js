@@ -6,22 +6,17 @@ fetch(`${baseUrl}/results`)
     displayQuestion(question)
 })
 
-function generateTrivia() {
-    Document.getElementById()
-    generateTrivia()
+function showQuestion(question) {
+    const trueButton = document.getElementById('trueButton');
+    const falseButton = document.getElementById('falseButton')
 }
 
-function checkAnswer(inputAnswer) {
-    if(inputAnswer = incorrectAnswer){
-        document.getElementById("correct_answer");
+function checkAnswer(inputAnswer, correctAnswer) {
+    if(inputAnswer === correctAnswer){
         return `${inputAnswer} is correct!`;
     }
-    else if(inputAnswer = wrongOption){
-        document.getElementById("incorrect_answers")
-        return `${inputAnswer} is not correct.`;
-    }
     else{
-        alert(`Please choose an option before proceeding to the next question`);
+        return `${inputAnswer} is not correct.`;
     }
 }
 
