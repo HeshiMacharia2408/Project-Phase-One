@@ -7,9 +7,6 @@ function displayQuestion() {
     .then(question => {
         displayQuestion();
     })
-    .catch(error => {
-        console.error('Failed to get question:', error);
-    });
 }
 
 function checkAnswer(userAnswer, correctAnswer, feedbackElement) {

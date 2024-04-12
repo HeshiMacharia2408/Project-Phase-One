@@ -1,105 +1,105 @@
 {
-    "response_code": 0,
-    "results": [
-      {
-        "type": "boolean",
-        "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "In career mode of &quot;Need for Speed: Underground 2&quot;, the first car the player can drive is the BMW M3 GTR.",
-        "correct_answer": "False",
-        "incorrect_answers": [
-          "True"
-        ]
-      },
-      {
-        "type": "boolean",
-        "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "In Rocket League, you can play Basketball.",
-        "correct_answer": "True",
-        "incorrect_answers": [
-          "False"
-        ]
-      },
-      {
-        "type": "boolean",
-        "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "In &quot;Super Mario World&quot;, the rhino mini-boss, Reznor, is named after the lead singer of the band &quot;Nine Inch Nails&quot;.",
-        "correct_answer": "True",
-        "incorrect_answers": [
-          "False"
-        ]
-      },
-      {
-        "type": "boolean",
-        "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "Mortal Kombat was almost based on Jean-Claude Van Damme movie.",
-        "correct_answer": "True",
-        "incorrect_answers": [
-          "False"
-        ]
-      },
-      {
-        "type": "boolean",
-        "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "Minecraft wasn&rsquo;t the original name to Minecraft.",
-        "correct_answer": "True",
-        "incorrect_answers": [
-          "False"
-        ]
-      },
-      {
-        "type": "boolean",
-        "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "In &quot;Resident Evil&quot;, only Chris has access to the grenade launcher.",
-        "correct_answer": "False",
-        "incorrect_answers": [
-          "True"
-        ]
-      },
-      {
-        "type": "boolean",
-        "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "David Baszucki was a co-founder of ROBLOX Corporation.",
-        "correct_answer": "True",
-        "incorrect_answers": [
-          "False"
-        ]
-      },
-      {
-        "type": "boolean",
-        "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "Metal Gear Solid V: The Phantom Pain runs on the Fox Engine.",
-        "correct_answer": "True",
-        "incorrect_answers": [
-          "False"
-        ]
-      },
-      {
-        "type": "boolean",
-        "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "Super Mario Bros. was released in 1990.",
-        "correct_answer": "False",
-        "incorrect_answers": [
-          "True"
-        ]
-      },
-      {
-        "type": "boolean",
-        "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "In World of Warcraft lore, Thrall is the original wielder of &quot;Doomhammer&quot;.",
-        "correct_answer": "False",
-        "incorrect_answers": [
-          "True"
-        ]
-      }
-    ]
-  }
+  "response_code": 0,
+  "results": [
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In Riot Games &quot;League of Legends&quot; the name of Halloween event is called &quot;The Reckoning&quot;.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In &quot;Super Mario World&quot;, the rhino mini-boss, Reznor, is named after the lead singer of the band &quot;Nine Inch Nails&quot;.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "DragonForce&#039;s &#039;Through the Fire and Flames&#039; is widely considered to be the hardest song in the Guitar Hero series.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "The scrapped Sonic the Hedgehog 2 level &quot;Hidden Palace Zone&quot; was later reused in the iOS port of the game. ",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "TF2: The Medic will be credited for an assist if he heals a Spy that successfully saps a building.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In career mode of &quot;Need for Speed: Underground 2&quot;, the first car the player can drive is the BMW M3 GTR.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In the Season One Championship of &quot;League of Legends&quot;, the highest achievable rank was Diamond.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "Hidden in the files for &quot;Mario Kart Arcade GP&quot; is a picture of the Beslan school hostage crisis.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In the game &quot;Subnautica&quot;, a &quot;Cave Crawler&quot; will attack you.",
+      "correct_answer": "True",
+      "incorrect_answers": [
+        "False"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Entertainment: Video Games",
+      "question": "In &quot;League of Legends&quot;, there exists four different types of Dragon.",
+      "correct_answer": "False",
+      "incorrect_answers": [
+        "True"
+      ]
+    }
+  ]
+}

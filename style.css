@@ -1,24 +1,25 @@
 body{
-font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: rgb(255, 251, 0);
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+background-color:yellow;
 border: 350px;
-border-style:outset;
-color:rgba(0, 0, 0, 0.644);
+border-style:groove;
+color:rgba(0, 0, 0, 0.267);
 max-width: 600px;
 margin: 0 auto;
 padding: 100px;
 }
 
 #question {
-    background-color:aliceblue;
-    border: 1px solid #ddd;
+    background-color:rgb(240, 248, 255);
+    border: 1px solid #ffffff;
     padding: 20px;
     margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 h1 {
-    color: rgb(196, 95, 0);
+    color: rgb(175, 85, 0);
+    padding: 5px
 }
 
 button {
@@ -30,4 +31,5 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px chocolate;
 }
