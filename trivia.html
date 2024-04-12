@@ -7,7 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <h1>Video Game Trivia</h1>
     <style>
+        body{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            background-color:yellow;
+            border: 350px;
+            border-style:groove;
+            color:rgba(0, 0, 0, 0.267);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 100px;
+        }
         
+        #question {
+            background-color:rgb(240, 248, 255);
+            border: 1px solid #ffffff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: rgb(175, 85, 0);
+            padding: 5px
+        }
+        button {
+            background-color:orange;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px 20px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px chocolate;
+        }
+
     </style>
 </head>
 <body>
@@ -16,7 +51,27 @@
     <button onclick="checkAnswer('true')">True</button>
     <button onclick="checkAnswer('false')">False</button>
     <div id="Error Message">Please choose an option to continue</div>
-    <script src="index.js"></script>
-    <script src="https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=boolean"></script>
+    <script>
+        const apiUrl = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=boolean'
+        fetch(`${apiUrl}/results`);
+        
+        function displayQuestion() {
+            fetch(`${apiUrl}`)
+            .then(response => response.json())
+            .then(question => {
+                displayQuestion();
+            })
+        }
+
+        function checkAnswer(userAnswer, correctAnswer, feedbackElement) {
+            if (userAnswer === correctAnswer) {
+                feedbackElement.textContent = 'Correct!';
+            } else {
+                feedbackElement.textContent = 'Wrong!';
+            }
+        }
+
+        displayQuestion();
+    </script>
 <body>
 </html>
