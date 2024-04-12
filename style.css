@@ -1,12 +1,12 @@
 body{
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-background-color: cyan;
-border: 50px;
+background-color: rgb(255, 251, 0);
+border: 350px;
 border-style:outset;
-color:darkslategrey;
+color:rgba(0, 0, 0, 0.644);
 max-width: 600px;
 margin: 0 auto;
-padding: 50px;
+padding: 100px;
 }
 
 #question {
@@ -18,11 +18,11 @@ padding: 50px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 h1 {
-    color: #4a4e69;
+    color: rgb(196, 95, 0);
 }
 
 button {
-    background-color: #4a4e69;
+    background-color:orange;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
