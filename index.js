@@ -1,16 +1,16 @@
-document.addEventListener('DOMContentLoaded', () => {
-    fetchQuestion();
-});
+document.addEventListener('DOMContentLoaded', function() {
+    const apiUrl = 'http://localhost:5500'
+    fetch(`${apiUrl}/results`);
+})
 
 function fetchQuestion() {
-    fetch('https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=boolean')
+    fetch(`${apiUrl}`)
         .then(response => response.json())
         .then(data => {
-            const question = data.results[0];
             displayQuestion(question);
         })
         .catch(error => {
-            console.error('Failed to fetch question:', error);
+            console.error('Failed to get question:', error);
         });
 }
 
@@ -24,6 +24,7 @@ function displayQuestion(question) {
 
     trueButton.onclick = () => checkAnswer('True', question.correct_answer, feedbackElement);
     falseButton.onclick = () => checkAnswer('False', question.correct_answer, feedbackElement);
+    
 }
 
 function checkAnswer(userAnswer, correctAnswer, feedbackElement) {
@@ -32,8 +33,4 @@ function checkAnswer(userAnswer, correctAnswer, feedbackElement) {
     } else {
         feedbackElement.textContent = 'Wrong!';
     }
-    setTimeout(() => {
-        feedbackElement.textContent = '';
-        fetchQuestion(); // Fetch a new question
-    }, 2000); // Show feedback for 2 seconds before moving on
 }

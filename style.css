@@ -1,14 +1,12 @@
 body{
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 background-color: cyan;
-border: 5px;
+border: 50px;
 border-style:outset;
-background-size:cover;
-background-position: center;
 color:darkslategrey;
-max-width: 450px;
+max-width: 600px;
 margin: 0 auto;
-padding: 25px;
+padding: 50px;
 }
 
 #question {
