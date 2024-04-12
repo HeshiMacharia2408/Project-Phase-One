@@ -1,30 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const apiUrl = 'http://localhost:5500'
-    fetch(`${apiUrl}/results`);
-})
+const apiUrl = 'https://opentdb.com/api.php?amount=10&category=15&difficulty=medium&type=boolean'
+fetch(`${apiUrl}/results`);
 
-function fetchQuestion() {
+function displayQuestion() {
     fetch(`${apiUrl}`)
-        .then(response => response.json())
-        .then(data => {
-            displayQuestion(question);
-        })
-        .catch(error => {
-            console.error('Failed to get question:', error);
-        });
-}
-
-function displayQuestion(question) {
-    const questionElement = document.getElementById('question');
-    questionElement.textContent = question.question;
-
-    const trueButton = document.getElementById('trueButton');
-    const falseButton = document.getElementById('falseButton');
-    const feedbackElement = document.getElementById('feedback');
-
-    trueButton.onclick = () => checkAnswer('True', question.correct_answer, feedbackElement);
-    falseButton.onclick = () => checkAnswer('False', question.correct_answer, feedbackElement);
-    
+    .then(response => response.json())
+    .then(question => {
+        displayQuestion();
+    })
+    .catch(error => {
+        console.error('Failed to get question:', error);
+    });
 }
 
 function checkAnswer(userAnswer, correctAnswer, feedbackElement) {
@@ -34,3 +19,5 @@ function checkAnswer(userAnswer, correctAnswer, feedbackElement) {
         feedbackElement.textContent = 'Wrong!';
     }
 }
+
+displayQuestion();
